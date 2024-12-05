@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap css -->
+     <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/css/bootstrap.css">
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <!-- custom css -->
+      <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bootstrap demo</title>
+  </head>
+  <body class="main-pg">
+  <header>
+    <div class="topbar">
+      <div class="container d-flex justify-content-between align-items-center py-2">
+        <div class="contact-info d-flex gap-4 align-items-center">
+          <div class="social-icon d-md-block d-none">
+            <ul class="d-flex list-unstyled gap-2 m-0">
+              <li><a href="#"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M7.002 3.41A3.583 3.583 0 0 0 3.412 7a3.583 3.583 0 0 0 3.59 3.59A3.583 3.583 0 0 0 10.59 7a3.583 3.583 0 0 0-3.588-3.59m0 5.924A2.34 2.34 0 0 1 4.668 7a2.336 2.336 0 0 1 2.334-2.334A2.336 2.336 0 0 1 9.335 7a2.34 2.34 0 0 1-2.333 2.334m4.572-6.07a.835.835 0 0 1-.837.837.837.837 0 1 1 .837-.837m2.377.85c-.053-1.122-.31-2.115-1.13-2.934C12 .362 11.008.105 9.886.05c-1.155-.066-4.619-.066-5.774 0C2.994.101 2 .357 1.18 1.176.358 1.995.105 2.989.05 4.11c-.066 1.156-.066 4.62 0 5.777C.101 11.008.357 12 1.18 12.82c.821.818 1.811 1.075 2.933 1.13 1.155.066 4.619.066 5.774 0 1.122-.052 2.115-.308 2.933-1.13.819-.819 1.075-1.812 1.13-2.933.066-1.156.066-4.618 0-5.774m-1.493 7.013a2.36 2.36 0 0 1-1.33 1.33c-.922.366-3.108.282-4.126.282s-3.208.08-4.126-.282a2.36 2.36 0 0 1-1.33-1.33C1.18 10.205 1.263 8.018 1.263 7s-.081-3.208.281-4.127a2.36 2.36 0 0 1 1.33-1.33c.922-.366 3.108-.282 4.127-.282s3.207-.08 4.125.281a2.36 2.36 0 0 1 1.33 1.331c.366.922.282 3.109.282 4.127s.084 3.208-.281 4.127"/></svg></a></li>
+              <li><a href="#"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M3.133 14H.23V4.653h2.903zM1.68 3.378A1.695 1.695 0 0 1-.001 1.681a1.681 1.681 0 1 1 3.362 0c0 .928-.753 1.697-1.681 1.697M13.996 14H11.1V9.45c0-1.084-.022-2.475-1.51-2.475-1.508 0-1.74 1.178-1.74 2.397V14h-2.9V4.653h2.785v1.275h.04c.388-.734 1.334-1.51 2.746-1.51C13.46 4.419 14 6.354 14 8.867V14z"/></svg></a></li>
+              <li><a href="#"><svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg"><path d="M11.57.583h2.148L9.028 6.02l5.518 7.398h-4.32L6.84 8.93l-3.87 4.486H.82L5.836 7.6.546.583h4.43l3.057 4.1zm-.754 11.532h1.19L4.327 1.817H3.05z"/></svg></a></li>
+              <li><a href="#"><svg width="9" height="17" viewBox="0 0 9 17" xmlns="http://www.w3.org/2000/svg"><path d="m8.087 9.55.423-2.955H5.862V4.677c0-.81.37-1.597 1.556-1.597h1.204V.563s-1.093-.2-2.137-.2c-2.18 0-3.606 1.416-3.606 3.979v2.253H.455V9.55H2.88v7.146h2.983V9.55z"/></svg></a></li>
+              <li><a href="#"><svg width="13" height="15" viewBox="0 0 13 15" xmlns="http://www.w3.org/2000/svg"><path d="M6.472 0C3.217 0 0 1.973 0 5.167c0 2.031 1.257 3.186 2.018 3.186.314 0 .495-.797.495-1.022 0-.268-.752-.84-.752-1.956 0-2.32 1.942-3.964 4.455-3.964 2.16 0 3.76 1.116 3.76 3.168 0 1.532-.676 4.405-2.865 4.405-.79 0-1.466-.519-1.466-1.263 0-1.09.838-2.147.838-3.272 0-1.91-2.98-1.564-2.98.744 0 .485.067 1.022.305 1.463-.438 1.714-1.333 4.267-1.333 6.033 0 .545.086 1.082.143 1.627.108.11.054.098.219.043 1.599-1.99 1.542-2.38 2.265-4.985.39.675 1.4 1.038 2.2 1.038 3.37 0 4.883-2.986 4.883-5.677C12.184 1.87 9.46 0 6.472 0"/></svg></a></li>
+
+            </ul>
+          </div>
+          <div class="mail-id">
+            <a href="#"><strong>Email :</strong> contact@benovymed.com</a>
+          </div>
+        </div>
+        <div class="company-details d-md-block d-none">
+          <ul class="d-flex list-unstyled gap-3 m-0 align-items-center">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main-nav container d-none d-xl-flex justify-content-between align-items-center">
+      <div class="logo"><a href="#"><img src="assets/img/logo.svg" alt=""></a></div>
+
+      <form class="d-flex search align-items-center" role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button type="submit"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.667 11.333a4.667 4.667 0 1 0 0-9.333 4.667 4.667 0 0 0 0 9.333m5.583.917L9.713 9.713" stroke="#3D564A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </form>
+
+    </div>
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <div class="logo d-xl-none"><a href="#"><img src="assets/img/logo.svg" alt=""></a></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="#000" aria-label="toggle"><path d="M22.951 14.522H2.64a.78.78 0 0 0-.781.78v1.563a.78.78 0 0 0 .78.782h20.313a.78.78 0 0 0 .782-.782v-1.562a.78.78 0 0 0-.782-.782m0-6.25H2.64a.78.78 0 0 0-.781.78v1.563a.78.78 0 0 0 .78.781h20.313a.78.78 0 0 0 .782-.78V9.052a.78.78 0 0 0-.782-.782m0-6.25H2.64a.78.78 0 0 0-.781.78v1.563a.78.78 0 0 0 .78.781h20.313a.78.78 0 0 0 .782-.78V2.802a.78.78 0 0 0-.782-.782"/></svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.683 5.511 4 11.838v6.829a.667.667 0 0 0 .666.666l4.67-.012a.666.666 0 0 0 .663-.666v-3.988a.666.666 0 0 1 .666-.667h2.667a.666.666 0 0 1 .667.667v3.985a.667.667 0 0 0 .666.669l4.668.012a.667.667 0 0 0 .667-.666v-6.834l-7.68-6.322a.51.51 0 0 0-.638 0m12.134 4.3-3.483-2.87V1.168a.5.5 0 0 0-.5-.5H17.5a.5.5 0 0 0-.5.5v3.025l-3.73-3.069a2 2 0 0 0-2.543 0L.181 9.811a.5.5 0 0 0-.066.705l1.062 1.291a.5.5 0 0 0 .705.068l9.8-8.072a.51.51 0 0 1 .638 0l9.802 8.072a.5.5 0 0 0 .704-.066l1.062-1.292a.5.5 0 0 0-.07-.706"/></svg>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Global R&D & AI Health Lab
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our 9 Verticals
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products/Services/Solutions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Investment Opportunity</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-xl-none inner-search d-flex search align-items-center mt-3" role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button type="submit"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.667 11.333a4.667 4.667 0 1 0 0-9.333 4.667 4.667 0 0 0 0 9.333m5.583.917L9.713 9.713" stroke="#3D564A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          </form>
+        </div>
+      </div>
+      
+    </nav>
+  </header>
+
+  <div class="hero-header">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slid-bg-1">
+          <!-- <img src="assets/img/hero-img1.jpg" alt="" class="img-fluid w-100"> -->
+          <div class="container carousel-content">
+            <div class="row">
+              <div class="col-xl-7 col-lg-9 carousel-inner-content">
+         
+                  <div class="sub-heading mb-2">
+                    Benovymed Healthcare is World’s Top 20 & India No:1
+                  </div>
+                  <h1 class="fw-bolder lh-sm fs-1">A Global Leader in Digital Health, Al Health, Telemedicine & Next-Gen MedTech through Innovation.</h1>
+                  <p>We are Transforming Healthcare by Revolutionizing Digital Health | AI Health | Telemedicine & Next-Gen MedTech through Disruption & Impact Innovation for the last 30 Years for Accessible | Affordable | Safe & Quality Health to all Globally including India</p>
+                  <a href="#" class="btn gradient-btn">Learn More <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slid-bg-1">
+          <!-- <img src="assets/img/hero-img1.jpg" alt="" class="img-fluid w-100"> -->
+          <div class="container carousel-content">
+            <div class="row">
+              <div class="col-xl-7 col-lg-9 carousel-inner-content">
+         
+                  <div class="sub-heading mb-2">
+                    Benovymed Healthcare is World’s Top 20 & India No:1
+                  </div>
+                  <div class="fw-bolder fs-1 lh-sm">A Global Leader in Digital Health, Al Health, Telemedicine & Next-Gen MedTech through Innovation.</div>
+                  <p>We are Transforming Healthcare by Revolutionizing Digital Health | AI Health | Telemedicine & Next-Gen MedTech through Disruption & Impact Innovation for the last 30 Years for Accessible | Affordable | Safe & Quality Health to all Globally including India</p>
+                  <a href="#" class="btn gradient-btn">Learn More <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slid-bg-1">
+          <!-- <img src="assets/img/hero-img1.jpg" alt="" class="img-fluid w-100"> -->
+          <div class="container carousel-content">
+            <div class="row">
+              <div class="col-xl-7 col-lg-9 carousel-inner-content">
+         
+                  <div class="sub-heading mb-2">
+                    Benovymed Healthcare is World’s Top 20 & India No:1
+                  </div>
+                  <div class="fw-bolder fs-1 lh-sm">A Global Leader in Digital Health, Al Health, Telemedicine & Next-Gen MedTech through Innovation.</div>
+                  <p>We are Transforming Healthcare by Revolutionizing Digital Health | AI Health | Telemedicine & Next-Gen MedTech through Disruption & Impact Innovation for the last 30 Years for Accessible | Affordable | Safe & Quality Health to all Globally including India</p>
+                  <a href="#" class="btn gradient-btn">Learn More <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+        <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+<div class="container">
+  <!-- form -->
+<form action="" class="top-form d-lg-flex d-none">
+  <input type="text" placeholder="Your Name" required name="" id="">
+ <input type="email" placeholder="Email ID" required name="" id="">
+ <input type="tel" placeholder="Phone Number" required name="" id="">
+ <button type="submit" class="btn primary-btn">Submit <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+</form>
+<!-- form -->
+</div>
+ 
+<!-- section 2 -->
+ <div class="welcome-sec sec-space container">
+  <div class="row">
+    <div class="col-lg-4 pe-0 d-lg-block d-none">
+      <img src="assets/img/welcome-group.jpg" alt="welcome-image" class="img-fluid w-100">
+    </div>
+    <div class="col-lg-8 d-flex align-items-center welcome-content">
+      <div>
+        <h2 class="fs-34 heading-w"> Welcome To<br> Benovymed Healthcare Group</h2>
+        <p class="mb-0">Benovymed Healthcare  is World's Top 20 & India's no:1 most Impactful Innovation DeepTech HealthTech Startup Global Healthcare Organisation MNC fast emerging DeepTech HealthTech Unicorn in Revolutionising Digital Health | AI Health | Telemedicine through Disruption & Impact Innovation</p>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- section 2 -->
+
+  <!-- section 3 -->
+   <div class="verticals p-60">
+    <div class="container">
+      <div class="row gap-2 mb-md-4 mb-2 flex-column text-center align-items-center justify-content-center">
+      <div class="row gap-2 mb-md-4 mb-2 flex-column text-center align-items-center justify-content-center">
+        <div class="sub-heading mb-2">
+          Our 9 Business  Verticals
+        </div>
+       <div class="col-lg-8">
+        <h2 class="fs-34">Vital innovations that bring the right care to everyone, everywhere</h2>
+       </div>
+       <p>Benovymed Healthcare Group is an Impact Innovation-based Deep Science | Deep Technologies | R&D & Health Technologies Innovation Global Organisation with our 9 Healthcare Business Vertical Global Business each business Vertical is just like a Subsidiary Company of Benovymed Healthcare Group each with Billion $ Revenue Generating Capability Y by Y working with all Stakeholders in B2B & B2B2C Business Models Globally as follows:</p>
+      </div>
+      <div class="row row-gap-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card vertical-card rounded-5 flop-am">
+            <div class="card-body">
+              <div class="icon">
+                <a href="#"> <img src="assets/img/SaaS-Platform.svg" alt=""></a>
+              </div>
+              <h3 class="fs-5 fw-bold mb-0 lh-base"><a href="#">Benovymed Digital Health SaaS Platform</a></h3>
+        
+              <p class="card-text mb-auto">Benovymed World’s 1st Most Comprehensive Integrated Care SaaS Platform for Diseases Management in (NCD & CD)</p>
+              <a href="#" class="card-link">Know More <svg width="20" class="ms-1" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 15.136 8.333-8.333m-8.333 0h8.333v8.333" stroke="#E81E66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card vertical-card rounded-5 flop-am">
+            <div class="card-body">
+              <div class="icon">
+                <a href="#"> <img src="assets/img/SaaS-Platform.svg" alt=""></a>
+              </div>
+              <h3 class="fs-5 fw-bold mb-0 lh-base"><a href="#">Benovymed Healthcare Group</a></h3>
+        
+              <p class="card-text mb-auto">Consulting Projects Healthcare/Wellness / Capital Advisors (Fundraising for Portfolio Companies)</p>
+              <a href="#" class="card-link">Know More <svg width="20" class="ms-1" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 15.136 8.333-8.333m-8.333 0h8.333v8.333" stroke="#E81E66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card vertical-card rounded-5 flop-am">
+            <div class="card-body">
+              <div class="icon">
+                <a href="#"> <img src="assets/img/SaaS-Platform.svg" alt=""></a>
+              </div>
+              <h3 class="fs-5 fw-bold mb-0"><a href="#">Benovymed Digital Health SaaS Platform</a></h3>
+        
+              <p class="card-text mb-auto">Benovymed World’s 1st Most Comprehensive Integrated Care SaaS Platform for Diseases Management in (NCD & CD)</p>
+              <a href="#" class="card-link">Know More <svg width="20" class="ms-1" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 15.136 8.333-8.333m-8.333 0h8.333v8.333" stroke="#E81E66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card vertical-card rounded-5 flop-am">
+            <div class="card-body">
+              <div class="icon">
+                <a href="#"> <img src="assets/img/SaaS-Platform.svg" alt=""></a>
+              </div>
+              <h3 class="fs-5 fw-bold mb-0 lh-base"><a href="#">Benovymed SmartTech Hospitals & SmartTech Clinics Global Network</a></h3>
+        
+              <p class="card-text mb-auto">Benovymed Global Network of SmartTech Hospitals & SmartTech Specialty Clinics (Our Partners & Owned | Managed)</p>
+              <a href="#" class="card-link">Know More <svg width="20" class="ms-1" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 15.136 8.333-8.333m-8.333 0h8.333v8.333" stroke="#E81E66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+
+
+        </div>
+    
+        <div class="col-lg-4 col-md-6">
+          <div class="card vertical-card rounded-5 flop-am">
+            <div class="card-body">
+              <div class="icon">
+                <a href="#"> <img src="assets/img/SaaS-Platform.svg" alt=""></a>
+              </div>
+              <h3 class="fs-5 fw-bold mb-0 lh-base"><a href="#">Benovymed Digital Health SaaS Platform</a></h3>
+        
+              <p class="card-text mb-auto">Benovymed World’s 1st Most Comprehensive Integrated Care SaaS Platform for Diseases Management in (NCD & CD)</p>
+              <a href="#" class="card-link">Know More <svg width="20" class="ms-1" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 15.136 8.333-8.333m-8.333 0h8.333v8.333" stroke="#E81E66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card vertical-card rounded-5 flop-am">
+            <div class="card-body">
+              <div class="icon">
+                <a href="#"> <img src="assets/img/SaaS-Platform.svg" alt=""></a>
+              </div>
+              <h3 class="fs-5 fw-bold mb-0 lh-base"><a href="#">Benovymed E-Marketplace Medical Supplies/ Hospital Supplies</a></h3>
+        
+              <p class="card-text mb-auto">World’s Largest E-Marketplace of Medical Supplies / Hospitals Supplies</p>
+              <a href="#" class="card-link">Know More <svg width="20" class="ms-1" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 15.136 8.333-8.333m-8.333 0h8.333v8.333" stroke="#E81E66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card vertical-card rounded-5 flop-am">
+            <div class="card-body">
+              <div class="icon">
+                <a href="#"> <img src="assets/img/SaaS-Platform.svg" alt=""></a>
+              </div>
+              <h3 class="fs-5 fw-bold mb-0 lh-base"><a href="#">Benovymed Capital</a></h3>
+        
+              <p class="card-text mb-auto">Impact Innovation Healthcare Fund1
+                (Investing in some of the World’s Best meaningful Promising HealthTech Startups)
+                </p>
+                <a href="#" class="card-link">Know More <svg width="20" class="ms-1" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 15.136 8.333-8.333m-8.333 0h8.333v8.333" stroke="#E81E66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card vertical-card rounded-5 flop-am">
+            <div class="card-body">
+              <div class="icon">
+               <a href="#"> <img src="assets/img/SaaS-Platform.svg" alt=""></a>
+              </div>
+              <h3 class="fs-5 fw-bold mb-0 lh-base"><a href="#">Benovymed Global R&D & AI Health Innovation Lab</a></h3>
+        
+              <p class="card-text mb-auto">Benovymed Impact Innovation Think-Tank /Command Center
+                (Concept to Commercialization)</p>
+                <a href="#" class="card-link">Know More <svg width="20" class="ms-1" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 15.136 8.333-8.333m-8.333 0h8.333v8.333" stroke="#E81E66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card vertical-card rounded-5 flop-am">
+            <div class="card-body">
+              <div class="icon">
+                <a href="#"><img src="assets/img/SaaS-Platform.svg" alt=""></a>
+              </div>
+              <h3 class="fs-5 fw-bold mb-0 lh-base"><a href="#">Benovymed Digital Health SaaS Platform</a></h3>
+        
+              <p class="card-text mb-auto">Benovymed World’s 1st Most Comprehensive Integrated Care SaaS Platform for Diseases Management in (NCD & CD)</p>
+              <a href="#" class="card-link">Know More <svg width="20" class="ms-1" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 15.136 8.333-8.333m-8.333 0h8.333v8.333" stroke="#E81E66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+
+
+        </div>
+    
+      </div>
+    </div>
+   </div>
+   </div>
+  <!-- section 3 -->
+
+  <!-- section 4 -->
+   <div class="addressable-sec p-60">
+    <div class="container text-center">
+      <div class="row gap-2 mb-4 flex-column text-center align-items-center justify-content-center">
+        <div class="sub-heading mb-2">
+          Our Addressable Market
+        </div>
+       <div class="col-lg-8">
+        <h2 class="fs-34">Addressable Global Market</h2>
+       </div>
+       <p>Benovymed Healthcare is a Game-changer in a Multi-Trillion Dollars Non-Communicable Diseases ( NCD) & Women’s Health Global Market including India & in a Trillion Dollar Fastest Growing Emerging AI Health Global Market including India</p>
+      </div>
+      <div class="addressable-grid mb-5">
+        <div class="circle-card text-center">
+          <div class="img-box">
+            <a href="#"><img src="assets/img/Cancer-img.jpg" alt="" class="img-fluid"></a>
+          </div>
+          <div class="info-box position-relative">
+            <a href="#" class="btn">Cancer </a>
+          </div>
+        </div>
+        <div class="circle-card text-center">
+          <div class="img-box">
+            <a href="#"><img src="assets/img/Cancer-img.jpg" alt="" class="img-fluid"></a>
+          </div>
+          <div class="info-box position-relative">
+            <a href="#" class="btn">Cancer </a>
+          </div>
+        </div>
+        <div class="circle-card text-center">
+          <div class="img-box">
+            <a href="#"><img src="assets/img/Cancer-img.jpg" alt="" class="img-fluid"></a>
+          </div>
+          <div class="info-box position-relative">
+            <a href="#" class="btn">Cancer </a>
+          </div>
+        </div>
+        <div class="circle-card text-center">
+          <div class="img-box">
+            <a href="#"><img src="assets/img/Cancer-img.jpg" alt="" class="img-fluid"></a>
+          </div>
+          <div class="info-box position-relative">
+            <a href="#" class="btn">Cancer </a>
+          </div>
+        </div>
+        <div class="circle-card text-center">
+          <div class="img-box">
+            <a href="#"><img src="assets/img/Cancer-img.jpg" alt="" class="img-fluid"></a>
+          </div>
+          <div class="info-box position-relative">
+            <a href="#" class="btn">Cancer </a>
+          </div>
+        </div>
+        <div class="circle-card text-center">
+          <div class="img-box">
+            <a href="#"><img src="assets/img/Cancer-img.jpg" alt="" class="img-fluid"></a>
+          </div>
+          <div class="info-box position-relative">
+            <a href="#" class="btn">Cancer </a>
+          </div>
+        </div>
+       
+      </div>
+      <a href="#" class="btn gradient-btn">Learn More <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    </div>
+   </div>
+  <!-- section 4 -->
+
+  <!-- section -5 -->
+   <div class="r-img-overlap-sec">
+    <div class="container">
+      <div class="row align-items-center row-gap-4">
+        <div class="col-lg-6 order-lg-0 order-1">
+          <div class="d-flex gap-2 flex-column justify-content-center position-relative">
+            <div class="sub-heading mb-2">
+              Why Choose Us
+            </div>
+           <h2 class="fs-34 text-white ps-0">Benovymed Healthcare Group</h2>
+           <p class="ps-0">Benovymed Healthcare Group is a Global Leader, a Game-Changer DeepTech HealthTech Impact Innovation Fast Emerging Unicorn in a Multi-Trillions Dollar Global Market of Digital Health , AI Health, Telemedicine &amp; Next-Gen MedTech Multispeciality Surgical Robotics in Hospitals Speciality Clinics Healthcare Ecosystem and in a Multi-Disciplinary Multistage Journey in Cancer | Diabetes | Heart | COPD &amp; Mental Health in a Non Communicable Diseases (NCD) &amp; Women’s Health in Public Health &amp; Private Health in Diseases Prevention, Early Detection, Diagnosis, Treatment and with end to end Complete Diseases Management to benefits &amp; Impact Globally Billions of People &amp; working &amp; benefiting to all Stakeholders Govt, MOH, MOD, Hospitals, Pharma Co, Insurance Co, Corporate Co.</p>
+           <a href="#" class="btn gradient-btn">Learn More <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+           <div class="wtc-arrow"><img src="assets/img/arrow-wtc.png" alt=""></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+         <div class="wtc-img">
+          <img src="assets/img/why-to-choose.jpg" alt="">
+         </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  <!-- section -5 -->
+
+  <!-- section -6 -->
+   <div class="container p-60 mb-lg-3">
+    <div class="row gap-2 mb-4 flex-column text-center align-items-center justify-content-center">
+      <div class="sub-heading mb-2">
+        Benovymed Business Model
+      </div>
+     <div class="col-lg-8">
+      <h2 class="fs-34">Our Business Model​</h2>
+     </div>
+     <p>Benovymed Healthcare Group serving Healthcare Industry for the last 30 Years in developing marketing & delivering the World’s Class their owned Proprietary Patented Technology Game-Changer Next-Gen DeepTech HealthTech Impact Innovation Technologies Products | Services & Novel Clinical Solutions to Impact the Lives of Billions of People Globally including India through our Huge Customer Client Partners based for Accessible Affordable & Safe & Quality Health to All in the Business Models of</p>
+    </div>
+    <div class="row row-gap-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="card rounded-5 h-100">
+          <div class="card-body d-flex p-4 flex-column gap-2 flop-am">
+            <div class="icon">
+              <img src="assets/img/Corporate-Health-Plan.jpg" alt="">
+            </div>
+            <h3 class="fs-5 fw-bold mb-0 lh-base">Corporate Health Plan</h3>
+      
+            <p class="card-text mb-md-auto">Comprehensive Health Plan to benefits the Patients & Corporate Companies Employees & their Families in B2B & B2B2C Business Model</p>
+     
+            <a href="#" class="btn gradient-btn btn-overlay">Learn More <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card rounded-5 h-100 position-relative">
+          <div class="card-body d-flex p-4 flex-column gap-2 flop-am">
+            <div class="icon">
+              <img src="assets/img/Corporate-Health-Plan.jpg" alt="">
+            </div>
+            <h3 class="fs-5 fw-bold mb-0 lh-base">Government Health Plan</h3>
+      
+            <p class="card-text mb-md-auto">Comprehensive Health Plan to benefits the Patients -Every Citizens of the Country & The Govt, MOH, MOD etc. The Govt Employees & their Families in B2B & B2B2C Business Model</p>
+     
+            <a href="#" class="btn gradient-btn btn-overlay">Learn More <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card rounded-5 h-100">
+          <div class="card-body d-flex p-4 flex-column gap-2 flop-am">
+            <div class="icon">
+              <img src="assets/img/Corporate-Health-Plan.jpg" alt="">
+            </div>
+            <h3 class="fs-5 fw-bold mb-0 lh-base">Hospital | Clinic | Pharma Co | Insurance Co Health Plan</h3>
+      
+            <p class="card-text mb-md-auto">Comprehensive Health Plan to benefits the Patients & the Hospital | Clinic | Dr | Pharma Co I Insurance Co in B2B & B2B2C Business Model</p>
+     
+            <a href="#" class="btn gradient-btn btn-overlay">Learn More <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+   </div>
+  <!-- section -6 -->
+
+  <!-- section 7 -->
+   <div class="founder-sec p-60">
+    <div class="container">
+     <div class="row align-items-center row-gap-4">
+      <div class="col-lg-5">
+        <img src="assets/img/Mahendra-Singh.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-lg-7">
+       <div class="quotes mt-4">
+        <p class="fs-18">Ambassador Mahendra Singh is the Founder & CEO of Benovymed Healthcare Group, a global leader in Digital Health, AI Health, and MedTech. With 30+ years of experience, he has founded 17 successful startups and launched 90 innovative health technologies used worldwide. A former WHO Geneva Expert Member, he is dedicated to making healthcare accessible and affordable for billions globally.</p>
+        <div class="fw-semibold text-dark-emphasis mb-0 fs-18">Founder & CEO | Promoter Profile</div>
+        <span class="fw-bolder mb-3">Ambassador Mahendra Singh</span>
+        <a href="#" class="btn gradient-btn">Learn More <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+       </div>
+        
+      </div>
+     </div>
+    </div>
+   </div>
+  <!-- section 7 -->
+
+  <!-- section-8 -->
+   <div class="container p-60">
+    <div class="row gap-2 mb-4 flex-column text-center align-items-center justify-content-center">
+      <div class="sub-heading mb-2">
+        Our Partners & Customer Base
+      </div>
+     <div class="col-lg-8">
+      <h2 class="fs-34">Our Valued Partners in Healthcare Innovation</h2>
+     </div>
+     <p>Our Founder & CEO bringing his 30 Years of his Most Impactful Valuable Wealth Assets of Multifaceted Billion $ Domain expertise in DeepTech & HealthTech his Excellency in Healthcare working with all stakeholders in Healthcare Ecosystem in B2B & B2B2C Business Models has Created Huge Customer Base, Huge Tractions with Big Business and Clients Business Partners Base in India & Globally.</p>
+    </div>
+    <div class="row mb-4 row-gap-4">
+      <div class="col-lg-3 col-md-6">
+     <div class="text-center px-3 py-4 rounded partners">
+      <div class="fs-2 fw-bold">350,000</div>
+      <div>Doctors</div>
+     </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+     <div class="text-center px-3 py-4 rounded partners">
+      <div class="fs-2 fw-bold">350,000</div>
+      <div>Doctors</div>
+     </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+     <div class="text-center px-3 py-4 rounded partners">
+      <div class="fs-2 fw-bold">350,000</div>
+      <div>Doctors</div>
+     </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+     <div class="text-center px-3 py-4 rounded partners">
+      <div class="fs-2 fw-bold">350,000</div>
+      <div>Doctors</div>
+     </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+     <div class="text-center px-2 py-4 rounded partners h-100 d-flex align-items-center">
+      <div class="fw-semibold">Working with all Stakeholders with 40+ Countries Govt, MOH, MOD & Hospitals</div>
+     </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+     <div class="text-center px-3 py-4 rounded partners h-100 d-flex align-items-center">
+      <div class="fw-semibold">World’s Top Technology Research University</div>
+     </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+     <div class="text-center px-3 py-4 rounded partners h-100 d-flex align-items-center">
+      <div class="fw-semibold">World’s Top Hospital & Medical Research University</div>
+     </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+     <div class="text-center px-3 py-4 rounded partners h-100 d-flex align-items-center">
+      <div class="fw-semibold">Insurance Companies & Pharma Companies</div>
+     </div>
+      </div>
+    </div>
+
+  <div class="text-center">
+    <p class="fw-semibold secondary-color">"We Partner with not everyone & anyone”</p>
+    <p class="mb-0">Our Founder & CEO bringing his 30 Years of his Most Impactful Valuable Wealth Assets of Multifaceted Billion $ Domain expertise in DeepTech & HealthTech his Excellency in Healthcare working with all stakeholders in Healthcare Ecosystem in B2B & B2B2C Business Models has Created Huge Customer Base, Huge Tractions with Big Business and Clients Business Partners Base in India & Globally.</p>
+  </div>
+   </div>
+  <!-- section-8 -->
+
+  <!-- call to action -->
+   <div class="container callta">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h2 class="heading-w">Transform Healthcare with Us</h2>
+        <p>By bringing Change in Our Healthcare Ecosystem. To benefits all Stakeholders & Impact benefits the Lives of Billions of People Globally Including India for making Healthcare Accessible | Affordable | Safe & Quality Health to All for Building the Future of Healthcare for a Healthier World. </p>
+        <span class="fw-semibold mb-lg-0 mb-3 d-block heading-w"> INVEST in Benovymed Healthcare Group | Partner with Us | Support Us | Join Us  Today!</span>
+      </div>
+      <div class="col-lg-3">
+        <a href="#" class="btn gradient-btn">Join Us Today <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      </div>
+    </div>
+   </div>
+  <!-- call to action -->
+
+  <!-- footer start -->
+   <footer>
+    <div class="container">
+      <div class="f-logo">
+        <img src="assets/img/logo.svg" alt="">
+      </div>
+      <div class="row row-gap-4">
+        <div class="col-lg-2">
+          <div class="foot-h">
+            <span class="fs-18 fw-bolder mb-1 d-block">QUICK LINKS</span>
+            <div class="foot-sep"></div>
+          </div>
+       
+            <ul class="menu-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Product | Services | Solutions</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+      
+        </div>
+        <div class="col-lg-6">
+          <div class="foot-h">
+            <span class="fs-18 fw-bolder mb-1 d-block">OUR BUSINESS VERTICALS</span>
+            <div class="foot-sep"></div>
+          </div>
+
+          <ul class="menu-links grid-50">
+            <li><a href="#">Benovymed Digital Health SaaS Platform</a></li>
+            <li><a href="#">Benovymed Global R&D & AI Health Innovation Lab</a></li>
+            <li><a href="#">Benovymed SmartTech Hospitals & SmartTech Clinics Global Network</a></li>
+            <li><a href="#">Benovymed E-Marketplace Medical Supplies/ Hospital Supplies</a></li>
+            <li><a href="#">Benovymed Turnkey Global Projects - Medical Supplies/Hospitals Supplies</a></li>
+            <li><a href="#">Benovymed Healthcare Consulting Group</a></li>
+            <li><a href="#">Benovymed Medical Robotics with AI</a></li>
+            <li><a href="#">Benovymed Medical Tourism</a></li>
+            <li><a href="#">Benovymed Capital</a></li>
+          </ul>
+
+        </div>
+        <div class="col-lg-4">
+          <div class="foot-h">
+            <span class="fs-18 fw-bolder mb-1 d-block">GET IN TOUCH</span>
+            <div class="foot-sep"></div>
+          </div>
+
+          <ul class="menu-links">
+            <li><a href="#"><strong>Registered Office-</strong> New Delhi, Delhi, India</a></li>
+            <li><a href="#"><strong>Corporate HQ-</strong> New Delhi, Delhi, India</a></li>
+            <li><a href="#"><strong>Global HQ-</strong> New Delhi, Delhi, India</a></li>
+            <li><a href="#"><strong>Global Technology Development & Innovation
+              & Global R&D and AI Health Innovation Lab-</strong> New Delhi, India </a></li>
+          </ul>
+   
+              <div class="email-box mb-3">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26.5846 2.41699L13.293 15.7087" stroke="#122B8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M26.5846 2.41699L18.1263 26.5837L13.293 15.7087L2.41797 10.8753L26.5846 2.41699Z" stroke="#18224D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                <div>
+                  <strong class="d-block">Email:</strong>
+                  <a href="#">contact@benovymed.com</a>
+                </div>
+              </div>
+
+              <div class="social-icon filled d-md-block d-none">
+                <ul class="d-flex list-unstyled gap-2 m-0">
+                  <li><a href="#"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M7.002 3.41A3.583 3.583 0 0 0 3.412 7a3.583 3.583 0 0 0 3.59 3.59A3.583 3.583 0 0 0 10.59 7a3.583 3.583 0 0 0-3.588-3.59m0 5.924A2.34 2.34 0 0 1 4.668 7a2.336 2.336 0 0 1 2.334-2.334A2.336 2.336 0 0 1 9.335 7a2.34 2.34 0 0 1-2.333 2.334m4.572-6.07a.835.835 0 0 1-.837.837.837.837 0 1 1 .837-.837m2.377.85c-.053-1.122-.31-2.115-1.13-2.934C12 .362 11.008.105 9.886.05c-1.155-.066-4.619-.066-5.774 0C2.994.101 2 .357 1.18 1.176.358 1.995.105 2.989.05 4.11c-.066 1.156-.066 4.62 0 5.777C.101 11.008.357 12 1.18 12.82c.821.818 1.811 1.075 2.933 1.13 1.155.066 4.619.066 5.774 0 1.122-.052 2.115-.308 2.933-1.13.819-.819 1.075-1.812 1.13-2.933.066-1.156.066-4.618 0-5.774m-1.493 7.013a2.36 2.36 0 0 1-1.33 1.33c-.922.366-3.108.282-4.126.282s-3.208.08-4.126-.282a2.36 2.36 0 0 1-1.33-1.33C1.18 10.205 1.263 8.018 1.263 7s-.081-3.208.281-4.127a2.36 2.36 0 0 1 1.33-1.33c.922-.366 3.108-.282 4.127-.282s3.207-.08 4.125.281a2.36 2.36 0 0 1 1.33 1.331c.366.922.282 3.109.282 4.127s.084 3.208-.281 4.127"></path></svg></a></li>
+                  <li><a href="#"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M3.133 14H.23V4.653h2.903zM1.68 3.378A1.695 1.695 0 0 1-.001 1.681a1.681 1.681 0 1 1 3.362 0c0 .928-.753 1.697-1.681 1.697M13.996 14H11.1V9.45c0-1.084-.022-2.475-1.51-2.475-1.508 0-1.74 1.178-1.74 2.397V14h-2.9V4.653h2.785v1.275h.04c.388-.734 1.334-1.51 2.746-1.51C13.46 4.419 14 6.354 14 8.867V14z"></path></svg></a></li>
+                  <li><a href="#"><svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg"><path d="M11.57.583h2.148L9.028 6.02l5.518 7.398h-4.32L6.84 8.93l-3.87 4.486H.82L5.836 7.6.546.583h4.43l3.057 4.1zm-.754 11.532h1.19L4.327 1.817H3.05z"></path></svg></a></li>
+                  <li><a href="#"><svg width="9" height="17" viewBox="0 0 9 17" xmlns="http://www.w3.org/2000/svg"><path d="m8.087 9.55.423-2.955H5.862V4.677c0-.81.37-1.597 1.556-1.597h1.204V.563s-1.093-.2-2.137-.2c-2.18 0-3.606 1.416-3.606 3.979v2.253H.455V9.55H2.88v7.146h2.983V9.55z"></path></svg></a></li>
+                  <li><a href="#"><svg width="13" height="15" viewBox="0 0 13 15" xmlns="http://www.w3.org/2000/svg"><path d="M6.472 0C3.217 0 0 1.973 0 5.167c0 2.031 1.257 3.186 2.018 3.186.314 0 .495-.797.495-1.022 0-.268-.752-.84-.752-1.956 0-2.32 1.942-3.964 4.455-3.964 2.16 0 3.76 1.116 3.76 3.168 0 1.532-.676 4.405-2.865 4.405-.79 0-1.466-.519-1.466-1.263 0-1.09.838-2.147.838-3.272 0-1.91-2.98-1.564-2.98.744 0 .485.067 1.022.305 1.463-.438 1.714-1.333 4.267-1.333 6.033 0 .545.086 1.082.143 1.627.108.11.054.098.219.043 1.599-1.99 1.542-2.38 2.265-4.985.39.675 1.4 1.038 2.2 1.038 3.37 0 4.883-2.986 4.883-5.677C12.184 1.87 9.46 0 6.472 0"></path></svg></a></li>
+    
+                </ul>
+              </div>
+
+        </div>
+
+      </div>
+      <div class="locations">
+        <span>New Delhi</span>
+        <span>Bangalore</span>
+        <span>Dubai</span>
+        <span>Abu Dhabi</span>
+        <span>Riyadh</span>
+        <span>Singapore</span>
+        <span>Hong Kong</span>
+        <span>USA</span>
+        <span>Nigeria</span>
+        <span>Kenya</span>
+        <span>London</span>
+        <span>Brussels</span>
+        <span>Geneva</span>
+      </div>
+      <div class="app-store">
+       <div class="row align-items-center row-gap-3">
+        <div class="col-lg-7">
+          <h2 class="fs-4">Benovymed Healthcare @ your Fingertips</h2>
+          <h3 class="fs-5 primary-color fw-semibold">DOWNLOAD THE APP</h3>
+        </div>
+        <div class="col-lg-5">
+          <div class="text-md-end">
+           <a href="#"> <img src="assets/img/apple.png" alt=""></a>
+           <a href="#"> <img src="assets/img/android.png" alt=""></a>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+   </footer>
+   <div class="copyright text-center">
+    <span class="text-white">©2024 by <strong class="text-white fw-semibold">Benovymed Healthcare PVT LTD</strong>. All rights reserved </span>
+  </div>
+  <!-- footer end -->
+     
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,  // Change slides every 2 seconds (2000 milliseconds)
+        disableOnInteraction: false,  // Ensure autoplay doesn't stop on user interaction
+      },
+    });
+  </script>
+  </body>
+</html>
