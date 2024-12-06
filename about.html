@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap css -->
+     <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/css/bootstrap.css">
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <!-- custom css -->
+      <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bootstrap demo</title>
+  </head>
+  <body class="main-pg">
+  <header>
+    <div class="topbar">
+      <div class="container d-flex justify-content-between align-items-center py-2">
+        <div class="contact-info d-flex gap-4 align-items-center">
+          <div class="social-icon d-md-block d-none">
+            <ul class="d-flex list-unstyled gap-2 m-0">
+              <li><a href="#"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M7.002 3.41A3.583 3.583 0 0 0 3.412 7a3.583 3.583 0 0 0 3.59 3.59A3.583 3.583 0 0 0 10.59 7a3.583 3.583 0 0 0-3.588-3.59m0 5.924A2.34 2.34 0 0 1 4.668 7a2.336 2.336 0 0 1 2.334-2.334A2.336 2.336 0 0 1 9.335 7a2.34 2.34 0 0 1-2.333 2.334m4.572-6.07a.835.835 0 0 1-.837.837.837.837 0 1 1 .837-.837m2.377.85c-.053-1.122-.31-2.115-1.13-2.934C12 .362 11.008.105 9.886.05c-1.155-.066-4.619-.066-5.774 0C2.994.101 2 .357 1.18 1.176.358 1.995.105 2.989.05 4.11c-.066 1.156-.066 4.62 0 5.777C.101 11.008.357 12 1.18 12.82c.821.818 1.811 1.075 2.933 1.13 1.155.066 4.619.066 5.774 0 1.122-.052 2.115-.308 2.933-1.13.819-.819 1.075-1.812 1.13-2.933.066-1.156.066-4.618 0-5.774m-1.493 7.013a2.36 2.36 0 0 1-1.33 1.33c-.922.366-3.108.282-4.126.282s-3.208.08-4.126-.282a2.36 2.36 0 0 1-1.33-1.33C1.18 10.205 1.263 8.018 1.263 7s-.081-3.208.281-4.127a2.36 2.36 0 0 1 1.33-1.33c.922-.366 3.108-.282 4.127-.282s3.207-.08 4.125.281a2.36 2.36 0 0 1 1.33 1.331c.366.922.282 3.109.282 4.127s.084 3.208-.281 4.127"/></svg></a></li>
+              <li><a href="#"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M3.133 14H.23V4.653h2.903zM1.68 3.378A1.695 1.695 0 0 1-.001 1.681a1.681 1.681 0 1 1 3.362 0c0 .928-.753 1.697-1.681 1.697M13.996 14H11.1V9.45c0-1.084-.022-2.475-1.51-2.475-1.508 0-1.74 1.178-1.74 2.397V14h-2.9V4.653h2.785v1.275h.04c.388-.734 1.334-1.51 2.746-1.51C13.46 4.419 14 6.354 14 8.867V14z"/></svg></a></li>
+              <li><a href="#"><svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg"><path d="M11.57.583h2.148L9.028 6.02l5.518 7.398h-4.32L6.84 8.93l-3.87 4.486H.82L5.836 7.6.546.583h4.43l3.057 4.1zm-.754 11.532h1.19L4.327 1.817H3.05z"/></svg></a></li>
+              <li><a href="#"><svg width="9" height="17" viewBox="0 0 9 17" xmlns="http://www.w3.org/2000/svg"><path d="m8.087 9.55.423-2.955H5.862V4.677c0-.81.37-1.597 1.556-1.597h1.204V.563s-1.093-.2-2.137-.2c-2.18 0-3.606 1.416-3.606 3.979v2.253H.455V9.55H2.88v7.146h2.983V9.55z"/></svg></a></li>
+              <li><a href="#"><svg width="13" height="15" viewBox="0 0 13 15" xmlns="http://www.w3.org/2000/svg"><path d="M6.472 0C3.217 0 0 1.973 0 5.167c0 2.031 1.257 3.186 2.018 3.186.314 0 .495-.797.495-1.022 0-.268-.752-.84-.752-1.956 0-2.32 1.942-3.964 4.455-3.964 2.16 0 3.76 1.116 3.76 3.168 0 1.532-.676 4.405-2.865 4.405-.79 0-1.466-.519-1.466-1.263 0-1.09.838-2.147.838-3.272 0-1.91-2.98-1.564-2.98.744 0 .485.067 1.022.305 1.463-.438 1.714-1.333 4.267-1.333 6.033 0 .545.086 1.082.143 1.627.108.11.054.098.219.043 1.599-1.99 1.542-2.38 2.265-4.985.39.675 1.4 1.038 2.2 1.038 3.37 0 4.883-2.986 4.883-5.677C12.184 1.87 9.46 0 6.472 0"/></svg></a></li>
+
+            </ul>
+          </div>
+          <div class="mail-id">
+            <a href="#"><strong>Email :</strong> contact@benovymed.com</a>
+          </div>
+        </div>
+        <div class="company-details d-md-block d-none">
+          <ul class="d-flex list-unstyled gap-3 m-0 align-items-center">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main-nav container d-none d-xl-flex justify-content-between align-items-center">
+      <div class="logo"><a href="#"><img src="assets/img/logo.svg" alt=""></a></div>
+
+      <form class="d-flex search align-items-center" role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button type="submit"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.667 11.333a4.667 4.667 0 1 0 0-9.333 4.667 4.667 0 0 0 0 9.333m5.583.917L9.713 9.713" stroke="#3D564A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </form>
+
+    </div>
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <div class="logo d-xl-none"><a href="#"><img src="assets/img/logo.svg" alt=""></a></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="#000" aria-label="toggle"><path d="M22.951 14.522H2.64a.78.78 0 0 0-.781.78v1.563a.78.78 0 0 0 .78.782h20.313a.78.78 0 0 0 .782-.782v-1.562a.78.78 0 0 0-.782-.782m0-6.25H2.64a.78.78 0 0 0-.781.78v1.563a.78.78 0 0 0 .78.781h20.313a.78.78 0 0 0 .782-.78V9.052a.78.78 0 0 0-.782-.782m0-6.25H2.64a.78.78 0 0 0-.781.78v1.563a.78.78 0 0 0 .78.781h20.313a.78.78 0 0 0 .782-.78V2.802a.78.78 0 0 0-.782-.782"/></svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.683 5.511 4 11.838v6.829a.667.667 0 0 0 .666.666l4.67-.012a.666.666 0 0 0 .663-.666v-3.988a.666.666 0 0 1 .666-.667h2.667a.666.666 0 0 1 .667.667v3.985a.667.667 0 0 0 .666.669l4.668.012a.667.667 0 0 0 .667-.666v-6.834l-7.68-6.322a.51.51 0 0 0-.638 0m12.134 4.3-3.483-2.87V1.168a.5.5 0 0 0-.5-.5H17.5a.5.5 0 0 0-.5.5v3.025l-3.73-3.069a2 2 0 0 0-2.543 0L.181 9.811a.5.5 0 0 0-.066.705l1.062 1.291a.5.5 0 0 0 .705.068l9.8-8.072a.51.51 0 0 1 .638 0l9.802 8.072a.5.5 0 0 0 .704-.066l1.062-1.292a.5.5 0 0 0-.07-.706"/></svg>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Global R&D & AI Health Lab
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our 9 Verticals
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products/Services/Solutions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Investment Opportunity</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-xl-none inner-search d-flex search align-items-center mt-3" role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button type="submit"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.667 11.333a4.667 4.667 0 1 0 0-9.333 4.667 4.667 0 0 0 0 9.333m5.583.917L9.713 9.713" stroke="#3D564A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          </form>
+        </div>
+      </div>
+      
+    </nav>
+  </header>
+
+ <!-- pg-header start -->
+  <div class="pg-header">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-7 text-center">
+            <p class="breadcrumbs d-flex gap-2 align-items-center justify-content-center mb-2 text-center"><span>Home</span><svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1.5 9 4-4-4-4" stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><a href="#">About</a></p>
+            <h1 class="h1 fw-bold">About</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- pg-header end -->
+
+ <!-- content-section -->
+  <div class="content mb-5">
+    <div class="container">
+        <h2 class="fs-4 mb-2">About Benovymed Healthcare Group</h2>
+        <p>
+            Benovymed Healthcare Group is World's Top 20 & India's no:1 most Impact Innovation DeepTech HealthTech Startup Global Healthcare Organisation MNC fast emerging DeepTech HealthTech Unicorn in Revolutionising Digital Health | AI Health | Telemedicine through Disruption & Innovation since 1993</p>
+        <p>Benovymed Healthcare Group is a Global Leader, a Game-Changer DeepTech HealthTech Impact Innovation Fast Emerging Unicorn in a Multi-Trillions Dollar Global Market of Digital Health, AI Health, Telemedicine & Next-Gen MedTech Multispeciality Surgical Robotics in Hospitals Speciality Clinics Healthcare Ecosystem and in a Multi-Disciplinary Multistage Journey in Cancer | Diabetes | Heart | COPD & Mental Health in a Non-Communicable Diseases (NCD) & Women’s Health in Public Health & Private Health in Diseases Prevention, Early Detection, Diagnosis, Treatment and with end to end Complete Diseases Management to benefits & Impact Globally Billions of People & working & benefiting to all Stakeholders Govt, MOH, MOD, Hospitals, Pharma Co, Insurance Co, Corporate Co.</p>
+        <ul>
+            <li>A global Leader in Revolutionizing Digital Health, AI Health & Next-Gen MedTech Multispeciality Surgical Robotics with AI Benovymed developed the World's 1st Most Comprehensive Integrated Care Disease Management SaaS Cloud Platform for a multi-stage Journey in Chronic Diseases (NCD) & COVID-19 type Disease Management.</li>
+            <li>Benovymed developed the World’s 1st Most Comprehensive Integrated Care SaaS Platform (Highly Scalable) with its Proprietary Patented Multiple Technologies and Clinical Novel Solutions for disease management in NCD & Women’s Health areas. </li>
+        </ul>
+        <p><strong>Powered by: Benovymed Global R&D and AI Health Innovation Lab.</strong></p>
+        <p>Benovymed Healthcare Group is a Global Healthcare R&D-based Institution, in terms of High Sustainable Exponential Growth Capabilities, We left behind many Big Established R&D &  Innovation Healthcare Institutions, MNCs, and Global organizations.</p>
+        <p>Benovymed Healthcare Group is Building the Future of Healthcare for Accessible l Affordable l Safe & Quality Health to All Locally & Globally including India for High Sustainable Growth to meet the ESG and UNSDG.</p>
+        <div class="row align-items-center justify-content-center my-4">
+            <div class="col-md-6">
+                <img src="assets/img/health-in-the-sdg.png" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/sustainable-goal.png" alt="" class="img-fluid rounded">
+            </div>
+        </div>
+        <p>Benovymed Healthcare Group with its 9 Healthcare Business Verticals (that means 9 Game Changer Disruptive Innovative World's fast emerging High Sustainable Exponential Growth Profit making 🌎 HealthTech Unicorn MNC) Each of 9 Healthcare Business Verticals with Multi Billions $ Revenue Generating Capabilities with High Sustainable Exponential Growth Profit making with Returns on Investment ROI 10X to 20X after 5 to 7 Yrs to Investors with Benovymed Healthcare Group Valuation of over 300 Billion $ with Investors Exit through IPO Listing on NASDAQ l NY l HK l Dubai l NSE working Globally including India in B2B & B2B2C Business models working with & benefit to all stakeholders to Govt, MOH, MOD, Hospitals, Speciality Clinics, Pharma co, Insurance co & Corporate Companies Globally including India.
+        </p>
+        <p>We have been building the Healthcare Industry through our 30 Years of Deep Science & Technologies R&D and Innovation based domain expertise in Medical Practices by Revolutionizing Digital Health l AI Health l Telemedicine I MedIoT & Next-Gen MedTech l Multispeciality Surgical Robotics with AI through Impact Innovation Disruptive Healthcare Technologies in Solving 1000 Complex Problems existing in Public Health l Private Health in NCD & CD areas in Diseases Management, Prevention, Early Detection, Complete Treatment &Control to Impact the lives of Billions of people & Benefits to all stakeholders for making Accessible l Affordable l Safe &Quality Health to All for making the Future of Healthcare for all Globally including India.</p>
+        <p>We are working for last 30 Years in Healthcare in Building, Creating , Growing Medical Practices of more than 100,000 Superspeciality Medical Practitioners in 20 Superspeciality Medical Practices ,Building from Scratch & Supporting, with International Standard Medical Quality Practices, Education, Mentoring, Growing Medical Practices driven by varied HealthTech & Advanced Medical Technologies Applications in 20 Superspeciality Practices to more than 5000 Hospitals( Single/Multi/Superspeciality) & Speciality Clinics (in 20 different Single Superspeciality Clinical Practices), in B2B & B2B2C Business models for Benefiting to all stakeholders with a Patient Centric Technologies Novel Clinical Solutions with our own Proprietary developed Game Changer Next-Gen DeepTech Health Technologies driven by Digital Health, AI Health, Telemedicine & Next Gen MedTech through Impact Innovation for better & Safe Treatments Outcomes, Healthcare Management in bringing change in our Healthcare Ecosystem Locally & Globally including India in Medical Practices in Hospital & Speciality Clinics Business in Healthcare Industry in India & Globally.
+        </p>
+        <p>Benovymed Healthcare Group is the Back-Bone & High Sustainable Exponential Growth Driver in Building the Future of Healthcare for Accessible | Affordable | Safe & Quality Health to All & Benovymed Healthcare Group is Pledged to meet the UNSDG for Globally Including India for making Healthier World 🌎 for ALL.</p>
+        <p>For the last 30 Yrs building the Highest Healthcare Quality Benchmark, Best Medical Practices, and Highest Standards in Efficacy l Safety & Quality, and delivery of the Highest Quality Treatment Outcomes in building 10 COE, Developing Novel Clinical Solutions Powered by DeepTech HealthTech through our Multifaceted Billion$ Domain Expertise from Idea to Commercialization Disruptive Innovative  R & D Innovation & Medical Practices.</p>
+        <p>In the last 30 years, we consulted, mentored, Trained, and educated in 20 Superspeciality Medical Practices with over 100,000 Doctors, Surgeons, Paramedical Team & Hospitals Team & Speciality Clinics, Hospital Management & Best International Quality Medical Practice Consultancy Globally Including India.</p>
+        <p>We know with Scientific Evidence-based Real Clinical Data to Predict with 200% Accuracy & Efficacy which Individual Speciality Physician, Hospitals &Speciality Clinics can deliver meaningful Clinical Treatment Outcomes or not in India & Globally.</p>
+        <p>Our 30 Yrs Multifaceted Billion$ Domain Expertise in Building and Creating Business in DeepTech HealthTech Healthcare Technologies Impact Innovation, Healthcare R & D Innovation, Healthcare, Hospital & Speciality Clinics in solving real 1000s of Complex Problems existing in NCD &CD areas.
+        </p>
+        <p>We have been bringing change in our Healthcare Ecosystem in India& globally for the last 30 Yrs for a Healthier India & Healthier World 🌎 to make the Healthcare Ecosystem Accessible l Affordable l Safe &Quality Health to All in India &Globally to Impact the lives of Billions for Building the Future of Healthcare for all.</p>
+        <p>We know Globally including in India which Hospital Speciality Physicians, Physicians are Professionally Healthy with their Knowledge Practice level, Expertise, and Ethics from the Inside Out to deliver the best Treatment Outcomes or not.</p>
+        <p>We have Mentored Educated & Trained over 70,000 Qualified & Board Certified Physicians in India & Globally are our students directly or indirectly in more than 20 Superspeciality Medical Practices for doing Ethical Medical Practices for better Treatment Outcomes using NextGen DeepTech Healthcare Technologies for the Highest Safety Highest Efficacy Highest Clinical Quality Delivery.</p>
+        <h2>Benovymed Healthcare Group Management Team:</h2>
+        <p>A Well Rounded Team of Internationally Renowned Professionals as a Science  Leader, Technology Leader, R&D Innovation Leaders, Medical Leader Professionals with over 100 Years of Collective Experience in the Healthcare, Hospitals & Health Technologies, IT, AI Health Industry with a Team of Medical Dr, Scientist, InnovatorDr, ResearchersDr, Digital HealthDr, Business Management Dr, Serial Founders built 17 Serial DeepTech HealthTech Startup & DeepTech HealthTech Global Startup Guru with 30 Yrs HealthTech Entrepreneur Experience with ethical Practices with each Leaders within an average of 25+ Years of Industry Experience.
+        </p>
+        <p>We have over 70,000 Professional Resumes waiting to join us for our Job Opening of 300+ Positions for different Levels & Departments in India & Globally within the next 12 months.
+        </p>
+        <p>
+            Benovymed Healthcare Group Founder & CEO Mahendra Singh is having very Impressive Strong History, Achievements, Contribution in Bringing Change in Healthcare by Building Healthcare Ecosystem for Accessible | Affordable | Safe & Quality Health to All Globally including India in last 30 Years as an Legendary, Visionary, Revolutionary , Passionate Serial DeepTech HealthTech Entrepreneur, DeepTech HealthTech Startup Guru, Serial DeepTech HealthTech Global Startup Founder & World’s Top 30 Most Impactful Global Indian Business Leader in Revolutionizing Digital Health | AI Health | Telemedicine | Next-Gen MedTech & MultiSpeciality Surgical Robotics through Disruption Innovation | Chief Scientist | InnovatorDr | Digital HealthDr | AI HealthDr | TelemedicineDr | Chief Global R&D and AI Health Innovation Officer from Idea -Concept to Strong R&D and Innovation and Disruption to GTM- Complete Commercialisation in Local & Global Market in bringing change in our Healthcare Ecosystem Globally with variety of our own Proprietary under Patented & Patented Game- Changer Disruptive Innovative Digital Health Technologies | Products | Services and Clinical Technologies Solutions for better Treatment Outcomes for Accessible | Affordable | Safe & Quality Health to All by Impacting the Lives of Billions of People Globally & Benefiting to all the Stakeholders (such as to 180 Countries Governments, MOH, MOD, Hospitals, Pharma Co, Insurance Co, Corporate Co).
+            </p>
+            <p>He serially founded setup built successfully Serially some of the 17 World's Best Meaningful Successful Impact Innovation Disruptive DeepTech HealthTech Global Startups from Scratch & converted them into MNCs (including Benovymed Healthcare Group).</p>
+            <p>He Launched ON HIS OWN SHOULDERS Some of the World’s Best 90 Next-Gen Disruptive Game Changer Next-Gen DeepTech HealthTech solving 1000s of Complex Problems existing in NCD & CD areas by Revolutionizing Digital Health l AI Health l Telemedicine &MedTech through Impact Innovation in the last 30 Yrs.</p>
+            <p>Our Founder the Next-Gen DeepTech HealthTech Man has created on his Own Shoulders 100s of Distributors Partners & Strategic Global Partners Globally, 1000s of Customer bases in B2B & B2B2C Globally Impacting the lives of Billions of People using his Launched variety of some of the World’s Game-Changer Disruptive Innovative over 90 Health Technologies in solving 1000s of Problem Existing in our NCD & CD Areas in Disease Management, Prevention, Early-Detections, Diagnosis, Treatments & Healthcare Industry in B2B and B2B2C Business Models in last over 30 Years in India and in over 100 Countries Globally.
+            </p>
+            <p>Our Founder & CEO Mahendra Singh's lifetime achievements & Contributions to the Healthcare Ecosystem in India & Globally with his Multi Hat Role with his Multifaceted Billion$ Domain Expertise in DeepTech HealthTech in Healthcare Practices in 20 Superspeciality Medical Practices for Accessible | Affordable & Safe Quality Health to All by converting</p>
+            <h2>“IMPOSSIBLE INTO POSSIBLE in Healthcare”</h2>
+            <p>THIS IS SIMPLY NEXT TO IMPOSSIBLE BY ANY ENTREPRENEUR | STARTUP FOUNDER ON THIS EARTH FOR
+                BRINGING CHANGE IN THE HEALTHCARE ECOSYSTEM FOR BUILDING THE FUTURE OF HEALTHCARE FOR ACCESSIBLE | AFFORDABLE | SAFE & QUALITY HEALTH TO ALL
+                </p>
+                <p><strong>Remember Always:</strong></p>
+                <p><strong>Benovymed has an Impressive Strong history of 30 Years in building healthcare for all can only make the Future of Healthcare for ALL.</strong></p>
+                <h2>Our Addressable Market</h2>
+                <p>Benovymed Healthcare Group is working in a Trillion Dollar AI Health Global Market which is the fastest growing Market at CAGR 61.3% annually 2023-30 with an underserved market with no supply and exponentially high growing demand globally and within a Few Trillion Dollars of Underestimated, Underserved, Undertreated, Underdiagnosed, Underdelivery, Non-Accessible, Non-Affordable in the areas of  Women's Health & Chronic Diseases (Cancer | Diabetes | Heart Disease | Mental Health | COPD ) including Top 20 Cancer Diseases demand growing at more than 51.4 % Annually  2023-30 & underserved and unmet exponential demand of Disease Management Capacity Building.</p>
+                <div class="row row-gap-3 mb-4">
+                    <div class="col-md-4">
+                        <img src="assets/img/women-health.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/Cancer.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/Diabetes.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/Heart-Disease.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/Mental-Health.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/COPD.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <h2>Benovymed Management Team</h2>
+                <p><strong>Benovymed Management Team </strong>consists of the Founder & CEO, 2 Co-Founders, Founding Members & Board of Advisors the winning Team of well rounded with collective Experience of over 100 Years of Domain Expertise experienced Leaders in the areas of Medical Professionals, Physicians Drs, Serial Digital HealthTech Startups Serial HealthTechEntrepreneur, AI Health Innovator, AI Health Scientists, Medical Research Scientists Dr and Innovation Scientist Doctors, Digital Health Scientist Dr and HealthTech Business Development and Global Guru in domain experts from 360-degree domain areas in Medical practice and Medical Research, Innovation to Research & Development in Medical, AI  Health Innovation, IT, Product Development, Product Strategy & HealthTechnology Commercialisation go to market Global Guru worked in Hospitals, Large Indian and global organization and Startups in Healthcare Digital Health, AI Health, and IT.
+                </p>
+                <h3>Our Board of Advisors</h3>
+                <p>We have a complete set of four domain expertise Boards of Advisory Members  from India and Globally as follows:</p>
+                <h4 class="mb-3">1. Advisory Board Members- Medical.</h4>
+                <p>10 Medical Advisory Board Members to name a few:</p>
+                <ul>
+                    <li><strong>Dr xx</strong> Padmashri Awarded, Ex-Director of PGIMR & Hospital and Ex-Vice Chancellor of the World's Top Indian Medical University and he is the US Top-ranked Surgeon & Medical Administrator of Indian Origin based in the US.</li>
+                    <li><strong>Dr xx</strong> Ex-Prof & Head of Deptt of Surgical Oncology, AIIMS Delhi, India.</li>
+                    <li><strong>Dr xx</strong> Ex-President of the European Oncology Association in Europe.</li>
+                    <li><strong>Dr xx</strong> Head of Medical Oncology, Max Hospital, & Fortis Hospitals, IHH Group, India.</li>
+                </ul>
+                <h4 class="mb-3">2. Advisory Board Members -Artificial Intelligence & Data Science. </h4>
+                <p>We have more than <strong>5 Advisory Board Members in AI Data Science.</strong> To illustrate a few as follows:</p>
+                <ul>
+                    <li>Two Dr Profs xx with over 20 Years of Expertise in AI Machine Learning & Deep Learning from Top IIT, India.</li>
+                    <li>Dr. Prof & Director xx, Artificial Intelligence Lab, USA.</li>
+                </ul>
+                <h4 class="mb-3">3. Advisory Board Members-IT & Technology. </h4>
+                <p>5 Advisory Board Members from Large IT Organisations.</p>
+                <h4 class="mb-3">4. Advisory Board Member- Business Management ( Stakeholders in Digital Health, AI Health, Healthcare, Insurance, Pharma, Hospital & Govt). </h4>
+                <h4 class="mb-3">5. 10+ Advisory Board Members from  Government globally, UN, WHO, Large MNC Healthcare organizations, Digital Health | AI Health, and International Hospitals groups. </h4>
+                <p>We welcome & Invite on Board to add more numbers of high profile strong contributors and Advisory Board Members in the above different Domain areas.</p>
+                <h2 class="mb-3">Our Board of Directors | Management</h2>
+                <h3 class="fs-4 mb-3">1. ​Ambassador Mahendra Singh,</h3>
+                <p>Benovymed Board Chairman, Board of Director, Founder & CEO & Promoter is a multifaceted High Influential Global Impactful Business Leader in Digital Health | AI Health | Telemedicine Healthcare with Multi-Hat Roles as Business Head.</p>
+                <p>Founder & Chief of Benovymed Global R&D and AI Health Innovation Lab | Chief Global R&D and AI Health Innovation Officer and Chief AI Health Officer.</p>
+                <p>Founder & Chief Strategy Officer | Chief Digital Health Officer | Chief Commercialisation Officer | Chief Marketing Officer.  </p>
+                <p> Founder & CTO- Software Technology Development( Interim).</p>
+                <h3 class="fs-4 mb-3">2. Co-Founder  & COO | Board of Director | Chief Medical Officer | Medical Affairs | Medical R&D | Global Business Operation.</h3>
+                <h3 class="fs-4 mb-3">3. Co-Founder | Executive Vice President - Medical Research-Global. (25 Years in Medical).</h3>
+                <h3 class="fs-4 mb-3">4. Few Founder Members | Software Engineering & Product Development. </h3>
+                <h3 class="fs-4 mb-3">5. We masked the Names from the Privacy & Confidentiality Clause.</h3>
+                <strong>We masked the Names from the Privacy & Confidentiality Clause.</strong>
+
+
+                <div class="founder-sec py-4 px-4 my-4 rounded-5">
+                    <div class="container">
+                     <div class="row align-items-center  row-gap-4">
+                      <div class="col-lg-3">
+                        <img src="assets/img/Mahendra-Singh.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="col-lg-6">
+                       <div class="quotes">
+                        <h2 class="fs-4">Our Founder & CEO | Promoter Profile</h2>
+                        <div class="fw-semibold text-dark-emphasis mb-0 fs-18">Ambassador Mahendra Singh,</div>
+                        <div class="fw-semibold text-dark-emphasis mb-0 fs-18">Founder & CEO | Board Chairman,</div>
+                        <span class="fw-bolder mb-3">Benovymed Healthcare Group</span>
+                        <div class="social-icon filled d-md-block d-none">
+                            <ul class="d-flex list-unstyled gap-2 m-0">
+                         
+                              <li><a href="https://www.linkedin.com/in/mahendrasingh1/" target="_blank"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M3.133 14H.23V4.653h2.903zM1.68 3.378A1.695 1.695 0 0 1-.001 1.681a1.681 1.681 0 1 1 3.362 0c0 .928-.753 1.697-1.681 1.697M13.996 14H11.1V9.45c0-1.084-.022-2.475-1.51-2.475-1.508 0-1.74 1.178-1.74 2.397V14h-2.9V4.653h2.785v1.275h.04c.388-.734 1.334-1.51 2.746-1.51C13.46 4.419 14 6.354 14 8.867V14z"></path></svg></a></li>
+                
+                            </ul>
+                          </div>
+                       </div>
+                        
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+
+                   <p>Ambassador Mahendra Singh is the Legendary, Visionary, Passionate, Revolutionary Serial DeepTech HealthTech Startup Entrepreneur, HealthTech Startup Guru and a Founder & CEO | Promoter | Board Chairman and Board Director of Benovymed Healthcare Group.</p>
+                   <p>He is World’s Top 30 Most Impactful Innovation DeepTech HealthTech Global Indian Leader & DeepTech HealthTech Think-Tank Global Leader with Multifaceted Billion Dollar Domain Expertise in Revolutionising Digital Health | AI Health | Telemedicine | Next-Gen MedTech through Impact Innovation since last 30 Years.</p>
+                   <p>Ambassador Mahendra Singh ( Dr for Doctors) is a WHO Geneva Expert Member ( Formerly) for Digital Health | AI Health Innovation, WHO Geneva. </p>
+                   <p>He is working with WHO Member Partners Countries Globally which adds huge value for Benovymed Healthcare Business for our exponential Big Volume Business acquisition Globally in no time keeping many tops well established & well-Funded Global Players so we can replace them from the market and also the New Virgin world's Fastest growing AI Health Global Market of Trillion Dollars with our Game Changer Technology Innovation and our Domain Expertise in Healthcare Business in the entire Healthcare Business from Deep Clinical domain areas of Inside to Outside areas of Healthcare Management.</p>
+                   <p>He is an Eminent Panellist | International Speaker in Digital Health & AI Health Innovation with various International Platforms | Chamber of Commerce Globally.</p>
+                   <p>He is an Advisor to all stakeholders | Mentor | Doctor | and Educator to Hospitals | Clinics | Doctors | Tech Research Universities & Medical Research Universities Globally.</p>
+                   <p>He is an Advisor, and Policy Maker in Digital Health -AI Health Technologies Road Map Builder to more than 40 countries Governments Globally including the Govt of India. Thereby these Countries' Government Official says you come with your Game Changer Technology Products & solutions we will sign big Deals with you in no time to Implement our Digital Health Technologies to Impact the Lives of Billions of People globally for Accessible | Affordable | and Quality Health to all.</p>
+                   <p>He is an Ambassador for UNSDG- Health to All, Human Rights & World Peace.</p>
+                   <p>He is MS (Applied Electronics by Research) from Gulbarga University, India in 1992,
+                    B.S ( Electronics) from Gulbarga University, India in 1989, and
+                    Master in Web Technology ( J2EE Java Technology, Oracle 8i, Digital Technology,
+                    E-Commerce, Cybersecurity) in 2000 from CDAC, Ministry of Electronics & IT, Govt of India. 
+                    </p>
+                    <p>During the Year 2000, he built an E-commerce Digital Health Platform single-handed and with multi -hat roles completing end-to-end MVP Beta version model a Next-generation Innovative technology digital Health web-based e-commerce integrated eHealth Platform with Java Technology, e-logistics, e-payment gateways, Online Doctor Consultation.</p>
+                    <p>Those were the days when there was no concept of Digital Health E-commerce in Healthcare, There was no Digital Health startup existing globally and no big Digital Health or IT Health company to come out with this kind of Novel digital Health E-commerce Platform even the concept of this was very far away from any startup across the world.</p>
+                    <p>During his Healthcare industry experience, he has worked on various AI Health Data Science models on real-time actionable Patient Data from the weakest side of AI in assistive AI, Augmented AI, semi Auto AI, supervised and unsupervised AI models to the strongest side of Intuitive cognitive AI, Auto AI in Health using ML, Deep Learning( CNN, ANN, Computer Vision, LSTM), NLP, in Healthcare.</p>
+
+                    <h2>Mahendra Singh is also by Professional Qualification</h2>
+                    <ul>
+                        <li>An exceptional AI and Robotics Scientist | Microwave Electronics Scientist | Microwave Radar Scientist | Innovator Scientist in Microwave Radar System of AWACS ( Airborne Warning and Control System used in early warning Airborne surveillance, Command & Control function for tactical Air Defence forces, locking the radar system of enemies & for Air warfare applications). He Invented, architect-designed, and developed this Innovative Technology MVP Product after doing Hardcore Microwave Electronics R&D during the year 1992 his Post Graduation University Research Scholar work in MS Microwave Electronics Research work for the development of the core system in Microwave Radar System which is nowadays used for Air force Military application in the AWACS system. </li>
+                        <li>Now, this AWACS system is developed by the top few Airforce Aircraft manufacturers globally from Israel and the US. </li>
+                    </ul>
+                    <p>In last 30 years, in B2B & B2B2C Business Models he serially built, Founded, setup on his own shoulders without any Large Team as a Multi-Hat Role 17 World’s Best Meaningful Successful Impact Game-Changer DeepTech HealthTech Global Startups from Scratch to multi-million $ & Billion $ Global MNC including Benovymed Healthcare Group and he Launched some of the World’s Best 90 Next-Gen Game-Changer DeepTech HealthTech Technologies Clinical Solutions in solving 1000s of Real Complex Problems existing in Healthcare System, Treatments and in various Diseases Management in NCD & CD areas driven by Digital Health, AI Health, Telemedicine & Next-Gen MedTech on his own shoulders without any Investor Funds as a serial HealthTech Investors.
+                        Including he built from scratch more than Half a Dozen Israeli HealthTech Startups in India and global | Few from India to Global and many from Global to India driven by Deep Science | Deep Technology | Deep Medical Science | Deep AI Health | Deep Digital health technology in bringing change in Healthcare.
+                        </p>
+                        <p><span>He has a strong business acquisition execution domain expertise capability of monetizing our Game Changer Technologies with High Sustainable exponential Growth Profit making ROI ;with atleast 10X to 20X with unique Go to Market Dynamic Strategies in India and the Global market as per different Geographical conditions and he launched more than;</span><strong><span>90 Game Changer Disruptive Innovative Technology in Digital Health | AI Health | Telemedicine | MedTech in his 30 Years of Excellence in Technology Innovation in Healthcare to Impact the Life of Billions of People in India  Globally without any Big Resources and Funds in his experience</span></strong><span >.</span></p>
+                        
+                        <p><span>His Deep Clinical Knowledge  Deep Clinical Expertise in more than 20 Super specialties in Healthcare in delivering more than 1000 types of Treatments and Procedures in Non-Communicable Diseases and Communicable Disease areas in the areas of Surgical, Non-Surgical, Minimum Invasive, Diagnosis is so profound and deep that, he can predict the Treatment Outcomes delivered before actually starting the Treatment | Disease Management by any Doctor / Surgeon / Hospitals Globally and also having deep expertise in Healthcare Business Management.</span></p>
+                        <p><strong><span>His multifaceted Billion $ worth core domain expertise areas in 360 degrees of Deep Clinical | Deep Healthcare | Deep Science | Deep Technologies | AI Health | Telemedicine Innovation | Monetizing Digital Health Technologies at the speed of Light | Unique Business Strategy and Go to Market, Market entry to Indian and different Global Market in commercializing 100s of Digital Health Technologies from the wealth of his 30 Years of Health startup serial entrepreneur Journey are in tons with complete end to end as a single-handed multi hat role from concept to complete commercialization in Health startup Journey when nobody in India was knowing about the next generation Digital health technologies business.</span></strong></p>
+                        <p><strong><span>;</span></strong></p>
+                        <p><strong><span>He is the Rare and Dare with highly Intellectual Brain and most Impactful Healthcare Technologies Global Indian Leader who is behind building, Growing, Creating Center for Excellence (COE) in 10 Superspeciality Medical Practices, Building, Creating many Healthcare Institutions ( In Govt , Private  Corporate Sector), DeepTech HealthTech Medical Devices Technologies -Medical RD and Innovation Institutions /Center, Medical Research Centre  Medical Colleges  Hospitals.</span></strong></p>
+                        <p><strong><span>He mentored, ;Trained, Educated over 70,000 Physicians Dr  Surgeons Globally including India in 20 Superspeciality Medical Practices, over 60 Clinical Trials;</span></strong><span>in next-generation  advanced Digital Health Technologies in Clinical Settings  Healthcare management settings.</span></p>
+                        
+                        <p><span>He Created the highly sustainable fast emerging Trillion $ Global Market of Digital Health, AI Health, Telemedicine  Next-Gen MedTech since 1993( Over 30 Years) to solve 1000 Real Existing Complex Problem in Healthcare Eco System not from Today or Yesterday.;</span></p>
+                        <p><span>Now the Whole world is following his Created Digital Health, AI Health, Telemedicine  Next-Gen MedTech.</span></p>
+                        <p><span>;</span></p>
+                        <p><span>Today whole World is using his Launched Technologies in Healthcare in every Superspeciality Medical Practices in Treatment  Diseases Managements in Surgical, Non-Surgical, Minimum Invasive, Diagnostics ( Digital Imaging, Digital Pathology) created worldwide in last 30 Years a Large Customer Base , Partners base with almost every stakeholders in Government, MOH, MOD, Govt  Private /Corporate Hospitals  Every Speciality Clinics Globally including India.</span></p>
+                        <p><span>;</span></p>
+                        <p><strong><span>Amb. Mahendra Singh ( Dr for Doctors) is a Digital HealthDr, AI HealthDr, TelemedicineDr  MedTechDr, DeepTech HealthTechDr, Inventor, InnovatorDr, Clinical Researcher , Innovation Scientist, Game Changer Digital Health Technology Clinical Solutions Provider | Medical Business Solutions Provider | Mahendra Singh is a Doctor with the will to Fix Problems in Healthcare | Voice of Healthcare | Digital Health Technologies- AI Health Business Leader | Startup Innovator | Digital Health-AI Health Exponential Growth Hacker.</span></strong></p>
+                        <p><span>;</span></p>
+                        <p><strong><span>He has in-depth hands of 30 Years of experience in right from creating Innovative Game changer Ideas -POC development-Clinical RD-Clinical Trials-Clinical Validations-Clinical Trials Cross Validations with Hospitals-Risk Management-SWOT Analysis-AI Health RD and Innovation- AI Health Solutions Research and Development  Innovation- AI Health Validation- Product development Prototyping-MVP-Technology Product Development-Go to Market commercialization into Indian and with a Unique Go to Market entry as per Market dynamics of Global Market while building 17 Impact Innovation DeepTech HealthTech Global Startup which is now Big Billion $ MNC.</span></strong></p>
+                        <p><span>;</span></p>
+                        <p><span>He Converted &ldquo;IMPOSSIBLE INTO POSSIBLE &ldquo; to Impact the Lives of Billions of People Globally for making Healthcare Accessible | Affordable | Safe  Quality Health to All for Building the Future of Healthcare for a Healthier World.</span></p>
+
+                        <div class="founder-sec py-4 px-4 my-4 rounded-5">
+                            <div class="container">
+                             <div class="row align-items-center  row-gap-4">
+                              <div class="col-lg-3">
+                                <img src="assets/img/Sanjay-Bhargava.jpg" alt="" class="img-fluid">
+                              </div>
+                              <div class="col-lg-6">
+                               <div class="quotes">
+                                <h2 class="fs-4">Co-Founder & Chief Operating Officer ( COO)</h2>
+                                <div class="fw-semibold text-dark-emphasis mb-0 fs-18">Air Commodore (Dr). S. Bhargava (Retd), MBBS, MD,</div>
+                                <div class="fw-semibold text-dark-emphasis mb-0 fs-18">Co-Founder & Chief Operating Officer ( COO )| Board of Director |
+                                    Chief Medical Officer
+                                    </div>
+                                <div class="fw-semibold text-dark-emphasis mb-0 fs-18">Head-Medical Affairs| Medical Operation| Global Business Operation
+                                    </div>
+                                <span class="fw-bolder mb-3">Benovymed Healthcare Group</span>
+                             
+                               </div>
+                                
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+
+                           <p>He is Indias renowned Medical Practioners Physician Doctor with holding MBBS and MD Professional Qualifications from Indias Top Premier Medical Institute.</p>
+<p>He is an Indian Air Force Air Commodore (Retd)| in Defence Medical Services, He is an exceptional Top Brass Speciality Medical Physician Leader  Powerful Medical Services Administrator, a Healthcare Veteran, and an Impactful Healthcare Leader.</p>
+<p>He is having over 30 years of Billion $ worth rich experience in Medical Practices, Patient care, Research, Teaching , Managing large Medical Services  Managing Large Medical Operations including recent 20 Years as a Hospital Administrator as a CEO managing large Hospitals in Pan India and Chief | Director Medical Services for Indian Air Force| Defence Ministry Medical Services managing very large Projects  Accounts in Pan India. ;;</p>
+<p>He is passionate in solving Complex problems in Healthcare with an Holistic approach by Revolutionizing Digital Health | AI Health | Telemedicine through Innovation for Accessible | Affordable | Safe | Quality Health to All.</p>
+<p>Benovymed Global RD and AI Health innovation Lab ; (Web page)</p>
+<p>What is Benovymed Global RD  AI Health Innovation Centre?</p>
+<p>Benovymed Visionary  Passionate Founder  CEO and he is Worlds Top 30 Most Impactful Global Business Leaders has set up and already developed an Global RD and AI Health Innovation Lab ;after putting together within the Innovation lab his strong Multifaceted serially building 17 Digital Health | AI Health | Telemedicine ; MedTech Innovation experience in Indias 1st HealthTech Founder with his own experience of over 30 Years in healthcare in Digital Health, AI Health  Telemedicine Innovation Health Technology Products  Novel Solutions development in Benovymed in the areas of Prevention, Screening, Early Detection to Early warning  Early Prediction, Consultation, Prognosis, Diagnosis, Treatment, Disease Management through Remote Patient Monitoring, Management  Patient engagement irrespective of any global location with 24x7x365 days Clinical Support  Management through our Highly Scalable Digital Health and AI Health Technology Platform.;</p>
+
+<p class="fw-bold">1. Top 5 Chronic Diseases</p>
+<p>;Cancer ;(Top20 Cancer Diseases including Breast Cancer, Cervical Cancer, Lung Cancer, Colorectal Cancer and others) ;| Diabetes | Heart Disease | Mental Health | COPD ;for Public Health and for Individual Health and</p>
+<p  class="fw-bold">2. Emerging Reemerging Infectious Disease highly contagious deadly Corona Virus COVID-19 Like Diseases Management and Pandemic Management,</p>
+<p>Prevention, Early Warning  Early Prediction, Tracing, early detection, Dr Consultation, Diagnosis, Prognosis, Treatment, Disease Management, Preparedness and Readiness, COVID-19 Pandemic Health Disaster and Risk Management, Central Command, Capacity building for Stopping Transmission  Containment management.</p>
+<p>Women&rsquo;s Health : Comprehensive Women&rsquo;s Health with End to End Diseases Management, Prevention, Early-Detection,Diagnosis, Treatments  Complete Diseases Management for Women Empowerment.;</p>
+<p>; Our RD and AI Health Innovation ThinkTank works on complete end to end from Concept to RD to commericialisation Globally has set up and developed ;a unique Central Command ThinkTank with deep mind driven RD and Innovation which is uniquely placed in the core foundation of Benovymed Healthcare which can be trusted and bank upon by all stakeholders  Billions of People across the world and nowhere across the world such RD and Innovation Centre till now exist in 360-degree areas of Healthcare with an objective of Ethical medical Practices, Quality Medical Practices, Highest Quality Standards, the highest level of Patient Safety, Highest Treatment efficacy, Highest Quality Health delivery with Highest Treatment Outcomes Per Procedures Per Treatment to bring change, Transformation in Healthcare in the areas of Doctor decision making ability, Empowering Doctors, medical Practices,Patient First, Patient care in Prevention, early detection, Dr Consultation, Disease Early warning, Prognosis,Diagnosis, Treatment  complete Disease Management using Science  Technology in Digital Health, AI Health  Telemedicine and in the areas of Market Research,Product fit Market Fit Clinical Validations and Clinical Developments, Healthcare Business Commercilaisation  Management, Product dvelopement  Innovation Stratgey, Business Risk Management, which is called as;</p>
+<p>Benovymed Global R D and AI Health Innovation Lab</p>
+<p>After a series of massive serial Fundraising, Benovymed will be converting its Highly Scalable RD  AI Health Innovation Lab into a world-class RD and AI Health Innovation Centre called as</p>
+<p> Benovymed Global RD and AI Health Innovation Centre</p>
+<p>Powered by:</p>
+<p>Benovymed Global RD and AI Health Innovation Lab</p>
+<p>Deep Science ;| ;Deep Technology ;| ;Artificial Intelligence ;| ;Innovation</p>
+<p>As per our 5 Year Business Plan, this World&rsquo;s Class  State of the art Worlds the First of its Kind with a massive Investment through a series of Venture Fundraising of over 100 Million USD.</p>
+<p>Our Benovymed RD and AI Health Innovation Think Tank will be our Major Growth Driver and make Benovymed Healthcare Global Organisation the fastest growing into more than 500 Billion Dollars by Market Valuation the worlds 1st AI Health Global Organisation from India.</p>
+
+<p>Benovymed is working in a Trillion Dollar AI Health Global Market which is the fastest growing market at a CAGR of 61.3% annually 2020-28 with the underserved market with no supply and exponentially high growing demand globally and within a Few Trillion Dollars of underserved Chronic Diseases (Cancer | Diabetes | Heart Disease | Mental Health | COPD ) including Top 20 Cancer Diseases demand growing at more than 51.4 % Annually ; underserved and unmet exponential demand of COVID-19 Like Emerging Reemerging Diseases Management and Pandemic Management ( COVID-19 Transmission Tracing, early warning, Testing  Treating readiness, preparedness, COVID-19 Disease Management Capacity Building).</p>
+
+<p>Our Benovymed Global RD and AI Health Innovation Centre will be the Benovymed Exponential Sustainable Growth Drivers  Powerhouse of Benovymed which is a Game-Changer RD and Innovation Think-tank in 360 Degree areas from Concept to Commercialisation of our over 2000 game changer Digital Technology Products Lines  Novel Solutions to solve 1000s of complex problems in Healthcare as per every country local Problems in over 180 countries Healthcare Problems in Public Health, Chronic Diseases ( Non-Communicable Diseases)  Communicable Disease ( Emerging Highly contagious deadly Infectious Diseases such as COVID-19, EBOLA, H1N1, Swine Flu, Dengue, Chikungunya, ; Japanese Encephalitis Virus, Leptospira  Rickettsia).</p>
+
+<p>We are expanding and working in partnership collaboration with all Key Authorities  all stakeholders ( Hospitals, Doctors, Pharma Co, Insurance Co, MNC / Corporates, Thinktank, and Ministry of Health (MOH) of every countrys government, Top-rated Medical Research Universities  Top Rated Technology Research Institutes in more than 180 Countries globally including India, Corporates, NGO, Not for Profit Global Organisation, UN  WHO.</p>
+<p>We are opening 20 International Multicentered RD  AI Health Innovation Lab in collaboration with the Worlds Top Tech University  University Hospital  Medical Research Institutes Globally owned by Benovymed Healthcare to solve locally  globally 1000s of complex problems in the Healthcare Ecosystem.</p>
+<p>We are coming up soon in Delhi NCR, India our new Corporate HQ, Global HQ, Global Technology Development Centre  Global RD and AI Health Innovation Centre.</p>
+<p>Benovymed has already developed its Best in Class, Global RD and AI Health Innovation Lab in Phase-1 and now developing the worlds first-of-its-kind Global RD and AI Health Innovation Center which will be the worlds No:1, world-class and the state of art RD  AI Health Innovation Global Center coming up in our Global HQ, Global Technology Development Center, Global RD  AI Health Innovation Center in Delhi, India. Powered by: Benovymed Global RD and AI Health Innovation Lab. ;;</p>
+<p>We are setting up a state of the Art Centre of Excellence in Healthcare RD and AI Health Innovation which will be the Worlds 1st ;of its Kind Global AI Health Innovation for solving Complex Problems existing and in emerging Infectious Disease areas in our Healthcare System from the complete inside out to benefits all stakeholders with a Patient-Centric Solutions Globally.</p>
+
+<p>As per our next 5-year business plan, we will be having within the next 5 Year timeline a Total Team size of more than 5000 growth drivers and major contributors including the worlds best team of more than 350 AI Health Data scientists, 150 Medical Researchers, 300 Medical Specialist, 1500 IT Engineering Professionals, 1000 Global Business Development, and 2000 Global Operation Team from across the worlds Best Technology  Research Institutes ; Medical Research University Hospitals at our India Global HQ to work on Thousands of complex problems in Healthcare to bring change in Healthcare to Impact the Life of Billions of People Globally to support our country Make in India Programme with solving every country local problems, local challenges and global problems globally.</p>
+
+<p>As per our 5 years Business Plans, Benovymed Healthcare will be the Worlds First and most impactful Deep Digital Health AI Health  Telemedicine Innovation Global Healthcare Organisation in Prevention, Early Detection, Diagnosis, and Complete Disease Management  Control of COVID-19 ( Top Deadly Communicable Disease ) Pandemic Management  Top 5 Chronic Disease ( Cancer | Heart Disease | Diabetes | COPD | Mental Health ) Management ( Non-Communicable Disease ) a highly sustainable fastest-growing with double-digit Profit by Revenue global organization with over Ten Billion US Dollars by valuation in the next 5 years time.</p>
+
+<p>Our 5-Year Business Plan for Product Development  Innovation</p>
+<p>As per our 5 Year Business Plan, In the current Phase1, we have built and developed a Highly Scalable and Highly sustainable growth worlds 1st most comprehensive multidisciplinary AI Health Platform which will be having one after the other in phase by phase, year by year fund by fund down the line in next 5 year starting with currently first developed 21, then another 100, 200 and then add on to have in total more than 2000 Disruptive Innovative Technology Products, Solutions  Services backed by Next-generation Science  Technology in Disease Prevention, Early Detection  Disease management, Medical Practice, Medical Innovation, Digital Health, AI Health, Telemedicine Innovation, IoTs, Blockchain Technology with the highest safety, Highest efficacy, Treatment Outcomes, security for patients and High Profitability to all stakeholders globally.;</p>
+
+<p>We have already converted our 21 POC into Products and developed into working 21 Products in Phase1, ;out of our disruptive, Innovative Products  Solutions 400 POC conceived  developed by our Founder  CEO.;</p>
+<p>The remaining 379 POC will be converted into 379 Products  Solutions in our phases 2  3 ;and thereby growing to have a total of more than 2000 disruptive, Innovative Technology Products and Novel Solutions to be placed on our worlds 1st most comprehensive multidisciplinary AI Health Platform Phase by phase within the next 5 Years with year by year funding as per our next 5 years business plan.</p>
+
+<p>Our Founder  CEO have developed after his excellent healthcare experience on the ground in his long continuing RD experience while he worked in building many Global HealthTech Startup from concept to commercialization and launched over 90 of Innovative Digital Health Technologies, AI Health, Medical Technologies Products, and solutions which were applied and used on several hundred thousands of Patients treatments and procedures inside thousands of Hospitals, Clinics and in Public health system in last over 30 years in the experience of our founder  CEO.;</p>
+<p>Thereafter, our Founder  CEO in his long ongoing RD experience has developed more than 400 new POCs Products and solutions which we will be rolling out in phase by phase in next 3 years globally in high sustainable Growth market of several Trillions dollars growing annually at CAGR 54.3 % , applying next Generation Science  Technology, Digital Health, Telemedicine  ;AI Health from the pain point of Patients, doctors, hospitals, government and all other healthcare stakeholders and from the gap analysis in more than 500 complex problems in various Health super speciality for Prevention of Health, Early detection, Diagnosis, Disease Management  Disease control and COVID-19 Like Emerging Reemerging Diseases Management and Pandemic Management and in the Treatment procedure in the Healthcare system and we have come out with their respective our Innovative Novel Solutions for those complex problems in the health system and developing them in a highly sustainable growth model of highly scalable Digital Health Technology Deep AI Health Telemedicine driven business model in phase by phase in next 3 years timeline.</p>
+
+<p>Benovymed Healthcare is born and setup from the strong learning of our Founder CEO while he serially set up, founded, self-funded as a serial Investor  Founders  CEO, Founding Managing Team, Initial Member, and built successfully from scratch to Multi-Millions Dollars 16 Most disruptive and Innovative DeepTech HealthTech Global Startups in Digital Health | AI Health | Telemedicine  MedTech in last over 30 Years, Launched of his own alone in India and Globally over 90 Innovative Digital Health | AI Health | Telemedicine  MedTech in B2B, B2B2C working with all stakeholders in healthcare and Impacting the Lives of Billions of People Globally including India</p>
+
+    </div>
+  </div>
+ <!-- content-section -->
+
+  <!-- call to action -->
+   <div class="container callta">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h2 class="heading-w">Transform Healthcare with Us</h2>
+        <p>By bringing Change in Our Healthcare Ecosystem. To benefits all Stakeholders & Impact benefits the Lives of Billions of People Globally Including India for making Healthcare Accessible | Affordable | Safe & Quality Health to All for Building the Future of Healthcare for a Healthier World. </p>
+        <span class="fw-semibold mb-lg-0 mb-3 d-block heading-w"> INVEST in Benovymed Healthcare Group | Partner with Us | Support Us | Join Us  Today!</span>
+      </div>
+      <div class="col-lg-3">
+        <a href="#" class="btn gradient-btn">Join Us Today <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.834 14.166 8.333-8.333m-8.333 0h8.333v8.333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      </div>
+    </div>
+   </div>
+  <!-- call to action -->
+
+  <!-- footer start -->
+   <footer>
+    <div class="container">
+      <div class="f-logo">
+        <img src="assets/img/logo.svg" alt="">
+      </div>
+      <div class="row row-gap-4">
+        <div class="col-lg-2">
+          <div class="foot-h">
+            <span class="fs-18 fw-bolder mb-1 d-block">QUICK LINKS</span>
+            <div class="foot-sep"></div>
+          </div>
+       
+            <ul class="menu-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Product | Services | Solutions</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+      
+        </div>
+        <div class="col-lg-6">
+          <div class="foot-h">
+            <span class="fs-18 fw-bolder mb-1 d-block">OUR BUSINESS VERTICALS</span>
+            <div class="foot-sep"></div>
+          </div>
+
+          <ul class="menu-links grid-50">
+            <li><a href="#">Benovymed Digital Health SaaS Platform</a></li>
+            <li><a href="#">Benovymed Global R&D & AI Health Innovation Lab</a></li>
+            <li><a href="#">Benovymed SmartTech Hospitals & SmartTech Clinics Global Network</a></li>
+            <li><a href="#">Benovymed E-Marketplace Medical Supplies/ Hospital Supplies</a></li>
+            <li><a href="#">Benovymed Turnkey Global Projects - Medical Supplies/Hospitals Supplies</a></li>
+            <li><a href="#">Benovymed Healthcare Consulting Group</a></li>
+            <li><a href="#">Benovymed Medical Robotics with AI</a></li>
+            <li><a href="#">Benovymed Medical Tourism</a></li>
+            <li><a href="#">Benovymed Capital</a></li>
+          </ul>
+
+        </div>
+        <div class="col-lg-4">
+          <div class="foot-h">
+            <span class="fs-18 fw-bolder mb-1 d-block">GET IN TOUCH</span>
+            <div class="foot-sep"></div>
+          </div>
+
+          <ul class="menu-links">
+            <li><a href="#"><strong>Registered Office-</strong> New Delhi, Delhi, India</a></li>
+            <li><a href="#"><strong>Corporate HQ-</strong> New Delhi, Delhi, India</a></li>
+            <li><a href="#"><strong>Global HQ-</strong> New Delhi, Delhi, India</a></li>
+            <li><a href="#"><strong>Global Technology Development & Innovation
+              & Global R&D and AI Health Innovation Lab-</strong> New Delhi, India </a></li>
+          </ul>
+   
+              <div class="email-box mb-3">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26.5846 2.41699L13.293 15.7087" stroke="#122B8D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M26.5846 2.41699L18.1263 26.5837L13.293 15.7087L2.41797 10.8753L26.5846 2.41699Z" stroke="#18224D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                <div>
+                  <strong class="d-block">Email:</strong>
+                  <a href="#">contact@benovymed.com</a>
+                </div>
+              </div>
+
+              <div class="social-icon filled d-md-block d-none">
+                <ul class="d-flex list-unstyled gap-2 m-0">
+                  <li><a href="#"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M7.002 3.41A3.583 3.583 0 0 0 3.412 7a3.583 3.583 0 0 0 3.59 3.59A3.583 3.583 0 0 0 10.59 7a3.583 3.583 0 0 0-3.588-3.59m0 5.924A2.34 2.34 0 0 1 4.668 7a2.336 2.336 0 0 1 2.334-2.334A2.336 2.336 0 0 1 9.335 7a2.34 2.34 0 0 1-2.333 2.334m4.572-6.07a.835.835 0 0 1-.837.837.837.837 0 1 1 .837-.837m2.377.85c-.053-1.122-.31-2.115-1.13-2.934C12 .362 11.008.105 9.886.05c-1.155-.066-4.619-.066-5.774 0C2.994.101 2 .357 1.18 1.176.358 1.995.105 2.989.05 4.11c-.066 1.156-.066 4.62 0 5.777C.101 11.008.357 12 1.18 12.82c.821.818 1.811 1.075 2.933 1.13 1.155.066 4.619.066 5.774 0 1.122-.052 2.115-.308 2.933-1.13.819-.819 1.075-1.812 1.13-2.933.066-1.156.066-4.618 0-5.774m-1.493 7.013a2.36 2.36 0 0 1-1.33 1.33c-.922.366-3.108.282-4.126.282s-3.208.08-4.126-.282a2.36 2.36 0 0 1-1.33-1.33C1.18 10.205 1.263 8.018 1.263 7s-.081-3.208.281-4.127a2.36 2.36 0 0 1 1.33-1.33c.922-.366 3.108-.282 4.127-.282s3.207-.08 4.125.281a2.36 2.36 0 0 1 1.33 1.331c.366.922.282 3.109.282 4.127s.084 3.208-.281 4.127"></path></svg></a></li>
+                  <li><a href="#"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M3.133 14H.23V4.653h2.903zM1.68 3.378A1.695 1.695 0 0 1-.001 1.681a1.681 1.681 0 1 1 3.362 0c0 .928-.753 1.697-1.681 1.697M13.996 14H11.1V9.45c0-1.084-.022-2.475-1.51-2.475-1.508 0-1.74 1.178-1.74 2.397V14h-2.9V4.653h2.785v1.275h.04c.388-.734 1.334-1.51 2.746-1.51C13.46 4.419 14 6.354 14 8.867V14z"></path></svg></a></li>
+                  <li><a href="#"><svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg"><path d="M11.57.583h2.148L9.028 6.02l5.518 7.398h-4.32L6.84 8.93l-3.87 4.486H.82L5.836 7.6.546.583h4.43l3.057 4.1zm-.754 11.532h1.19L4.327 1.817H3.05z"></path></svg></a></li>
+                  <li><a href="#"><svg width="9" height="17" viewBox="0 0 9 17" xmlns="http://www.w3.org/2000/svg"><path d="m8.087 9.55.423-2.955H5.862V4.677c0-.81.37-1.597 1.556-1.597h1.204V.563s-1.093-.2-2.137-.2c-2.18 0-3.606 1.416-3.606 3.979v2.253H.455V9.55H2.88v7.146h2.983V9.55z"></path></svg></a></li>
+                  <li><a href="#"><svg width="13" height="15" viewBox="0 0 13 15" xmlns="http://www.w3.org/2000/svg"><path d="M6.472 0C3.217 0 0 1.973 0 5.167c0 2.031 1.257 3.186 2.018 3.186.314 0 .495-.797.495-1.022 0-.268-.752-.84-.752-1.956 0-2.32 1.942-3.964 4.455-3.964 2.16 0 3.76 1.116 3.76 3.168 0 1.532-.676 4.405-2.865 4.405-.79 0-1.466-.519-1.466-1.263 0-1.09.838-2.147.838-3.272 0-1.91-2.98-1.564-2.98.744 0 .485.067 1.022.305 1.463-.438 1.714-1.333 4.267-1.333 6.033 0 .545.086 1.082.143 1.627.108.11.054.098.219.043 1.599-1.99 1.542-2.38 2.265-4.985.39.675 1.4 1.038 2.2 1.038 3.37 0 4.883-2.986 4.883-5.677C12.184 1.87 9.46 0 6.472 0"></path></svg></a></li>
+    
+                </ul>
+              </div>
+
+        </div>
+
+      </div>
+      <div class="locations">
+        <span>New Delhi</span>
+        <span>Bangalore</span>
+        <span>Dubai</span>
+        <span>Abu Dhabi</span>
+        <span>Riyadh</span>
+        <span>Singapore</span>
+        <span>Hong Kong</span>
+        <span>USA</span>
+        <span>Nigeria</span>
+        <span>Kenya</span>
+        <span>London</span>
+        <span>Brussels</span>
+        <span>Geneva</span>
+      </div>
+      <div class="app-store">
+       <div class="row align-items-center row-gap-3">
+        <div class="col-lg-7">
+          <h2 class="fs-4">Benovymed Healthcare @ your Fingertips</h2>
+          <h3 class="fs-5 primary-color fw-semibold">DOWNLOAD THE APP</h3>
+        </div>
+        <div class="col-lg-5">
+          <div class="text-md-end">
+           <a href="#"> <img src="assets/img/apple.png" alt=""></a>
+           <a href="#"> <img src="assets/img/android.png" alt=""></a>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+   </footer>
+   <div class="copyright text-center">
+    <span class="text-white">©2024 by <strong class="text-white fw-semibold">Benovymed Healthcare PVT LTD</strong>. All rights reserved </span>
+  </div>
+  <!-- footer end -->
+     
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  </body>
+</html>
